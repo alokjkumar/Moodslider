@@ -1,4 +1,8 @@
 <figure class="figure">
   <img [src]="image" class="figure-img img-fluid rounded" alt="{{name}}">
-  <figcaption class="figure-caption">{{name}}</figcaption>
+  <figcaption class="figure-caption">
+    {{name}}
+    <br />
+    <small><ng-container *ngFor="let mo of mood;let isLast=last">{{mo}}{{isLast ? '': ', '}}</ng-container></small>
+  </figcaption>
 </figure>

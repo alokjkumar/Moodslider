@@ -12,5 +12,10 @@ figure {
   figcaption {
     text-align: center;
     font-size: 20px;
+
+    small {
+      font-size: 12px;
+      font-style: italic;
+    }
   }
 }
