@@ -1,3 +1,7 @@
-<div class="programmes">
-  <programme *ngFor="let show of content | moodFilter : profile" [name]="show.name[0]" [image]="show.image[0]" [mood]="show.mood"></programme>
+<div class="programmes" *ngIf="content.length > 0">
+  <programme *ngFor="let show of content | moodFilter : profile | slice:0:5" [name]="show.name[0]" [image]="show.image[0]" [mood]="show.mood"></programme>
+</div>
+
+<div class="error" *ngIf="content.length == 0">
+  <h3>Add some content to get started!</h3>
 </div>

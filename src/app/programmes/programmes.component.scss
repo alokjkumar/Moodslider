@@ -1,7 +1,16 @@
 .programmes {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    text-align: center;
+  }
 }
