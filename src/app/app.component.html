@@ -26,9 +26,7 @@
 
   <sliders (update)="updateProfile($event)"></sliders>
 
-  <ng-container *ngFor="let mood of profile">
-    <span *ngIf="mood != ''">{{mood}}</span>
-  </ng-container>
+  <programmes [profile]="profile" [content]="content"></programmes>
 
 </div>
 

@@ -11,10 +11,10 @@ export class SlidersComponent implements OnInit {
   // This could even be an input value which is controlled by the parent component - this would allow us to remove moods that aren't relevant or add more moods
   // Currently it seems more appropriate to be loading these in the component - otherwise no point having this component!
   sliderVals: any = [
-    {minVal: "agitated", maxVal: "calm", id: "0"},
-    {minVal: "happy", maxVal: "sad", id: "1"},
-    {minVal: "tired", maxVal: "wide_awake", id: "2"},
-    {minVal: "scared", maxVal: "fearless", id: "3"}
+    {minVal: "Agitated", maxVal: "Calm", id: "0"},
+    {minVal: "Happy", maxVal: "Sad", id: "1"},
+    {minVal: "Tired", maxVal: "Wide Awake", id: "2"},
+    {minVal: "Scared", maxVal: "Fearless", id: "3"}
   ];
 
   profile: any [] = [];                           // Empty profile

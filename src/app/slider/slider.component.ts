@@ -12,16 +12,9 @@ export class SliderComponent implements OnInit {
   @Input() minVal: string;                        // Input (minVal)
   @Input() maxVal: string;                        // Input (maxVal)
   @Input() id: string;                            // Input (ID)
-  minLabel: string;                               // String label (min)
-  maxLabel: string;                               // String label (max)
   @Output() update = new EventEmitter<any>();     // Output event emitter
 
   constructor() {}
-
-  private createLabel(val: string): string {
-    // Convert the value to a label for display
-    return val.toLowerCase().charAt(0).toUpperCase() + val.slice(1).toLowerCase().replace("_", " ");
-  }
 
   public getValue(value: number): void {
     // Get the previous value so that we don't emit the same event twice
@@ -37,10 +30,6 @@ export class SliderComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    // Create the labels once the component is ready
-    this.minLabel = this.createLabel(this.minVal);
-    this.maxLabel = this.createLabel(this.maxVal);
-  }
+  ngOnInit() {  }
 
 }

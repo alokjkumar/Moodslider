@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlidersComponent } from './sliders/sliders.component';
+import { ProgrammesComponent } from './programmes/programmes.component';
+import { ProgrammeComponent } from './programme/programme.component';
+import { MoodFilterPipe } from './mood-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
-    SlidersComponent
+    SlidersComponent,
+    ProgrammesComponent,
+    ProgrammeComponent,
+    MoodFilterPipe
   ],
   imports: [
     BrowserModule,

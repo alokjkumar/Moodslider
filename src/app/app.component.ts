@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { parseString } from 'xml2js';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,6 @@ export class AppComponent {
   }
 
   parseXML(data: any): void {
-    var parseString = require('xml2js').parseString;
     parseString(data, (err, result) => {
       if(!err) {
         if(result.programmedata.programme) {
