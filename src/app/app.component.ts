@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Moodslider';
+  title: string = 'Moodslider';
+  profile: any [] = [];
+
+  updateProfile(data: any): void {
+    this.profile = data;
+  }
+
+  uploadData(file: any): void {
+    console.log(file);
+  }
+
 }

@@ -14,7 +14,7 @@ export class SliderComponent implements OnInit {
   @Input() id: string;                            // Input (ID)
   minLabel: string;                               // String label (min)
   maxLabel: string;                               // String label (max)
-  @Output() update = new EventEmitter<string>();  // Output event emitter
+  @Output() update = new EventEmitter<any>();     // Output event emitter
 
   constructor() {}
 
@@ -23,7 +23,7 @@ export class SliderComponent implements OnInit {
     return val.toLowerCase().charAt(0).toUpperCase() + val.slice(1).toLowerCase().replace("_", " ");
   }
 
-  public getValue(value: number): string {
+  public getValue(value: number): void {
     // Get the previous value so that we don't emit the same event twice
     let prevVal = this.output;
     // Convert the numerical value on the slider to string

@@ -9,6 +9,7 @@ export class SlidersComponent implements OnInit {
 
   // All the slider values (put this in an external file and import for more sliders)
   // This could even be an input value which is controlled by the parent component - this would allow us to remove moods that aren't relevant or add more moods
+  // Currently it seems more appropriate to be loading these in the component - otherwise no point having this component!
   sliderVals: any = [
     {minVal: "agitated", maxVal: "calm", id: "0"},
     {minVal: "happy", maxVal: "sad", id: "1"},
@@ -17,7 +18,7 @@ export class SlidersComponent implements OnInit {
   ];
 
   profile: any [] = [];                           // Empty profile
-  @Output() update = new EventEmitter<string>();  // Output event emitter
+  @Output() update = new EventEmitter<any>();     // Output event emitter
 
   constructor() {
     for(let val of this.sliderVals) {

@@ -1,6 +1,8 @@
 <div class="container">
 
-  <!-- This bit should go in index.html for a multi-page app. -->
+  <input type="file" style="display:none;" #upload (change)="uploadData(upload.files)" accept=".xml" />
+
+  <!-- This bit could go in index.html for a multi-page app. -->
   <div class="row page-header">
     <div class="col-3 logo-wrapper">
       <!-- Logo -->
@@ -15,16 +17,18 @@
       <div class="row menu-wrapper">
         <!-- Menu -->
         <ul class="menu">
-          <li>Moodslider</li>
-          <li>Upload Content</li>
+          <li><a href="#">Moodslider</a></li>
+          <li><a href="#" (click)="upload.click()">Upload Content</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <sliders></sliders>
+  <sliders (update)="updateProfile($event)"></sliders>
 
-
+  <ng-container *ngFor="let mood of profile">
+    <span *ngIf="mood != ''">{{mood}}</span>
+  </ng-container>
 
 </div>
 
