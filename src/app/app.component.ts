@@ -8,13 +8,40 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'Moodslider';
   profile: any [] = [];
+  content: any [] = [];
 
   updateProfile(data: any): void {
     this.profile = data;
   }
 
-  uploadData(file: any): void {
-    console.log(file);
+  uploadData(files: any): void {
+    const reader = new FileReader();
+    if(files.length > 0) {
+      const [file] = files;
+      reader.readAsText(file);
+
+      reader.onload = () => {
+        this.parseXML(reader.result);
+      }
+    } else {
+      alert("Please select a valid file!");
+    }
+  }
+
+  parseXML(data: any): void {
+    var parseString = require('xml2js').parseString;
+    parseString(data, (err, result) => {
+      if(!err) {
+        if(result.programmedata.programme) {
+          this.content = result.programmedata.programme;
+          console.log(this.content);
+        } else {
+          alert("Please select a valid file!");
+        }
+      } else {
+        alert("Please select a valid file!");
+      }
+    })
   }
 
 }
