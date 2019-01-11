@@ -1,0 +1,40 @@
+.page-header {
+
+  margin-top: 25px;
+
+  .logo-wrapper {
+    text-align: center;
+
+    .logo-img {
+      display: block;
+      width: 80%;
+      height: auto;
+    }
+
+  }
+
+  .title-wrapper {
+    text-align: center;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .menu-wrapper {
+    ul.menu {
+      list-style-type: none;
+      li:not(:last-child):after {
+        margin-left: 10px;
+        content: "|";
+      }
+
+      li {
+        display: inline;
+        margin: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+
+}

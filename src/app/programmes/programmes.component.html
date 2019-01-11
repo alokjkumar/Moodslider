@@ -5,3 +5,7 @@
 <div class="error" *ngIf="content.length == 0">
   <h3>Add some content to get started!</h3>
 </div>
+
+<div class="error" *ngIf="profile.length == 0 && content.length > 0">
+  <h3>Now choose your mood!</h3>
+</div>
