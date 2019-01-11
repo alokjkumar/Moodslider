@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    padding: 15px;
+  }
+
+  .label {
+    width: 120px;
+  }
+
+  .minLabel {
+    text-align: right;
+  }
+
+  .maxLabel {
+    text-align: left;
+  }
+
+  .range {
+    flex-grow: 2;
+    margin-top: 15px;
+  }
+
+}
