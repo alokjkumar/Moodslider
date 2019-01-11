@@ -13,7 +13,6 @@ export class ProgrammeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

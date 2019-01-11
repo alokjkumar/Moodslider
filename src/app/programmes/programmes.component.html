@@ -1,3 +1,3 @@
 <div class="programmes">
-  <programme *ngFor="let show of content" [name]="show.name[0]" [image]="show.image[0]" [mood]="show.mood"></programme>
+  <programme *ngFor="let show of content | moodFilter : profile" [name]="show.name[0]" [image]="show.image[0]" [mood]="show.mood"></programme>
 </div>
