@@ -14,7 +14,7 @@ export class SliderComponent implements OnInit {
   @Input() id: string;                            // Input (ID)
   minLabel: string;                               // String label (min)
   maxLabel: string;                               // String label (max)
-  @Output() update = new EventEmitter<string>();   // Output event emitter
+  @Output() update = new EventEmitter<string>();  // Output event emitter
 
   constructor() {}
 

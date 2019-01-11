@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SlidersComponent implements OnInit {
 
   // All the slider values (put this in an external file and import for more sliders)
+  // This could even be an input value which is controlled by the parent component - this would allow us to remove moods that aren't relevant or add more moods
   sliderVals: any = [
     {minVal: "agitated", maxVal: "calm", id: "0"},
     {minVal: "happy", maxVal: "sad", id: "1"},
@@ -15,7 +16,8 @@ export class SlidersComponent implements OnInit {
     {minVal: "scared", maxVal: "fearless", id: "3"}
   ];
 
-  profile: any [] = [];
+  profile: any [] = [];                           // Empty profile
+  @Output() update = new EventEmitter<string>();  // Output event emitter
 
   constructor() {
     for(let val of this.sliderVals) {
@@ -26,9 +28,11 @@ export class SlidersComponent implements OnInit {
 
   ngOnInit() { }
 
-  addToProfile(data) {
+  addToProfile(data: any): void {
     // We update each array value individually. This allows us to overwrite values that are no longer relevant without logging previous values and crosschecking between various arrays
     this.profile[parseInt(data.id)] = data.data;
+    // Now output the profile so that the parent component can load suggestions
+    this.update.emit(this.profile);
   }
 
 }
