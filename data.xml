@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programmedata>
+	<title>Programme Data</title>
+	<programme id="1">
+		<name>A nightmare on Elm Street</name>
+		<image>../assets/img/content/nightmare_elm_street.jpg</image>
+		<mood>Scared</mood>
+		<mood>Agitated</mood>
+	</programme>
+	<programme id="2">
+		<name>School of Rock</name>
+		<image>../assets/img/content/school_of_rock.jpg</image>
+		<mood>Happy</mood>
+	</programme>
+	<programme id="3">
+		<name>First Blood</name>
+		<image>../assets/img/content/first_blood.jpg</image>
+		<mood>Wide Awake</mood>
+		<mood>Scared</mood>
+	</programme>
+	<programme id="4">
+		<name>Mary Poppins Returns</name>
+		<image>../assets/img/content/mary_poppins_returns.jpg</image>
+		<mood>Happy</mood>
+		<mood>Calm</mood>
+	</programme>
+	<programme id="5">
+		<name>Bumblebee</name>
+		<image>../assets/img/content/bumblebee.jpg</image>
+		<mood>Wide Awake</mood>
+		<mood>Agitated</mood>
+	</programme>
+	<programme id="6">
+		<name>Avengers: Endgame</name>
+		<image>../assets/img/content/avengers_endgame.jpg</image>
+		<mood>Agitated</mood>
+		<mood>Wide Awake</mood>
+	</programme>
+	<programme id="7">
+		<name>Bohemian Rhapsody</name>
+		<image>../assets/img/content/bohemian_rhapsody.jpg</image>
+		<mood>Sad</mood>
+		<mood>Calm</mood>
+	</programme>
+	<programme id="8">
+		<name>A Star Is Born</name>
+		<image>../assets/img/content/a_star_is_born.jpg</image>
+		<mood>Happy</mood>
+		<mood>Calm</mood>
+	</programme>
+	<programme id="9">
+		<name>The Greatest Showman</name>
+		<image>../assets/img/content/greatest_showman.jpg</image>
+		<mood>Happy</mood>
+		<mood>Fearless</mood>
+	</programme>
+	<programme id="10">
+		<name>Ready Player One</name>
+		<image>../assets/img/content/ready_player_one.jpg</image>
+		<mood>Wide Awake</mood>
+		<mood>Happy</mood>
+	</programme>
+	<programme id="11">
+		<name>Black Panther</name>
+		<image>../assets/img/content/black_panther.jpg</image>
+		<mood>Wide Awake</mood>
+		<mood>Agitated</mood>
+	</programme>
+	<programme id="12">
+		<name>The Meg</name>
+		<image>../assets/img/content/meg.jpg</image>
+		<mood>Scared</mood>
+		<mood>Wide Awake</mood>
+	</programme>
+</programmedata>
